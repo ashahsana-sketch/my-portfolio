@@ -1,12 +1,12 @@
 'use client';
 
 import { useState } from 'react';
-import { ExternalLink, Code, Layers } from 'lucide-react';
+import { ExternalLink, Code, Layers, Sparkles } from 'lucide-react';
 
 interface Project {
   id: string;
   title: string;
-  category: 'Next.js' | 'Full-Stack' | 'UI/UX' | 'All';
+  category: 'Next.js' | 'React' | 'html' | 'Full-Stack' | 'UI/UX' | 'Bootstrap' | 'Tailwind CSS' | 'TypeScript' | 'All';
   description: string;
   tags: string[];
   liveUrl?: string;
@@ -46,6 +46,46 @@ const projectsData: Project[] = [
     featured: false,
   },
   {
+    id: 'task-tracker',
+    title: 'Task Tracker Web App',
+    category: 'UI/UX',
+    description: 'An interactive task management application designed to organize workloads, prioritize tasks by level, and track completion progress with clean UI design.',
+    tags: ['TypeScript', 'HTML5', 'CSS3', 'Tailwind CSS'],
+    liveUrl: 'https://ashahsana-sketch.github.io/task-tracker/',
+    githubUrl: 'https://github.com/ashahsana-sketch/task-tracker',
+    featured: true,
+  },
+  {
+    id: 'cleaning-company',
+    title: 'Professional Cleaning Services Platform',
+    category: 'Next.js',
+    description: 'A responsive business web application for a modern cleaning service provider, featuring polished layouts, service showcases, and client booking inquiry flows.',
+    tags: ['Next.js', 'React', 'Tailwind CSS', 'TypeScript'],
+    liveUrl: 'https://cleaning-company-beige.vercel.app/',
+    githubUrl: 'https://github.com/ashahsana-sketch',
+    featured: false,
+  },
+  {
+    id: 'house-chores',
+    title: 'House Chores Organizer',
+    category: 'UI/UX',
+    description: 'A practical utility web application created to simplify household chore scheduling, task assignment, and daily tracking for families and shared spaces.',
+    tags: ['React', 'TypeScript', 'Tailwind CSS'],
+    liveUrl: 'https://house-chores-six.vercel.app/',
+    githubUrl: 'https://github.com/ashahsana-sketch',
+    featured: false,
+  },
+  {
+    id: 'temperature-converter',
+    title: 'Temperature Converter Utility',
+    category: 'UI/UX',
+    description: 'A fast, responsive conversion tool built for seamlessly translating temperature metrics across Celsius, Fahrenheit, and Kelvin with instant calculations.',
+    tags: ['TypeScript', 'JavaScript', 'HTML5', 'CSS3'],
+    liveUrl: 'https://temprature-convertor-one.vercel.app/',
+    githubUrl: 'https://github.com/ashahsana-sketch',
+    featured: false,
+  },
+  {
     id: 'portfolio',
     title: 'Professional Developer Portfolio',
     category: 'UI/UX',
@@ -64,30 +104,33 @@ export default function ProjectsPage() {
     : projectsData.filter(p => p.category === activeFilter);
 
   return (
-    <main className="pt-24 pb-16 px-6 max-w-7xl mx-auto">
-      {/* Header section */}
-      <div className="mb-12 text-center md:text-left">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand/10 border border-brand/30 text-brand-light text-xs font-semibold mb-4">
-          <Layers className="w-3.5 h-3.5" /> Featured Work
+    <main className="pt-28 pb-20 px-6 max-w-7xl mx-auto relative overflow-hidden">
+      {/* Background soft glow effect matching Hero */}
+      <div className="absolute top-1/4 right-10 -translate-y-1/2 w-96 h-96 bg-brand/10 blur-[120px] rounded-full pointer-events-none" />
+
+      {/* Header Section */}
+      <div className="mb-12 text-center md:text-left relative z-10">
+        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/80 border border-slate-800 text-slate-300 text-xs font-medium mb-4 backdrop-blur-sm shadow-inner">
+          <Sparkles className="w-3.5 h-3.5 text-brand-light" /> Featured Work
         </div>
-        <h1 className="text-3xl md:text-4xl font-extrabold text-slate-100 mb-3">
+        <h1 className="text-3xl md:text-5xl font-extrabold text-slate-100 tracking-tight mb-3">
           Projects & Applications
         </h1>
-        <p className="text-slate-400 max-w-2xl text-base">
+        <p className="text-slate-400 max-w-2xl text-base leading-relaxed">
           Explore modern, component-driven web applications built with performance, scalability, and seamless user experiences in mind.
         </p>
       </div>
 
       {/* Filter Buttons */}
-      <div className="flex flex-wrap items-center gap-3 mb-10 border-b border-slate-800 pb-6">
+      <div className="flex flex-wrap items-center gap-3 mb-10 border-b border-slate-800/80 pb-6 relative z-10">
         {(['All', 'Next.js', 'Full-Stack', 'UI/UX'] as const).map((category) => (
           <button
             key={category}
             onClick={() => setActiveFilter(category)}
-            className={`px-4 py-2 rounded-lg text-sm font-medium transition ${
+            className={`px-4 py-2 rounded-xl text-sm font-medium transition ${
               activeFilter === category
                 ? 'bg-brand text-white shadow-lg shadow-brand/25'
-                : 'bg-slate-900 text-slate-400 hover:text-slate-200 border border-slate-800'
+                : 'bg-slate-900/80 text-slate-400 hover:text-slate-200 border border-slate-800'
             }`}
           >
             {category}
@@ -95,18 +138,18 @@ export default function ProjectsPage() {
         ))}
       </div>
 
-      {/* Projects Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {/* Projects Grid matching Hero Card Style */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10">
         {filteredProjects.map((project) => (
           <div 
             key={project.id}
-            className={`group rounded-2xl bg-slate-900/60 border ${
-              project.featured ? 'border-brand/40 shadow-xl shadow-brand/5' : 'border-slate-800'
-            } p-6 flex flex-col justify-between transition hover:border-brand/80 hover:-translate-y-1`}
+            className={`group rounded-2xl bg-slate-950/80 border ${
+              project.featured ? 'border-brand/40 shadow-xl shadow-brand/10' : 'border-slate-800'
+            } p-6 flex flex-col justify-between transition-all duration-300 hover:border-brand/70 hover:-translate-y-1 backdrop-blur-md`}
           >
             <div>
               <div className="flex items-center justify-between mb-4">
-                <span className="text-xs font-semibold uppercase tracking-wider px-2.5 py-1 rounded bg-brand/10 text-brand-light border border-brand/20">
+                <span className="text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full bg-brand/10 text-brand-light border border-brand/30">
                   {project.category}
                 </span>
                 <div className="flex items-center gap-3 text-slate-400">
@@ -116,7 +159,7 @@ export default function ProjectsPage() {
                       target="_blank" 
                       rel="noopener noreferrer"
                       aria-label="GitHub Repository"
-                      className="hover:text-brand-light transition flex items-center gap-1.5 text-xs"
+                      className="hover:text-brand-light transition flex items-center gap-1.5 text-xs font-medium"
                     >
                       <Code className="w-4 h-4" /> Code
                     </a>
@@ -136,19 +179,20 @@ export default function ProjectsPage() {
               {/* Tech Tags */}
               <div className="flex flex-wrap gap-2 mb-6">
                 {project.tags.map((tag) => (
-                  <span key={tag} className="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 border border-slate-700/60">
+                  <span key={tag} className="text-xs px-2.5 py-1 rounded-lg bg-slate-900 text-slate-300 border border-slate-800">
                     {tag}
                   </span>
                 ))}
               </div>
 
-              <div className="flex items-center gap-4 pt-2 border-t border-slate-800/80">
+              {/* Action Buttons */}
+              <div className="flex items-center gap-4 pt-4 border-t border-slate-800/80">
                 {project.liveUrl && (
                   <a 
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-sm font-semibold text-brand-light hover:text-brand transition"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-brand-light hover:text-white transition"
                   >
                     Live Demo <ExternalLink className="w-4 h-4" />
                   </a>

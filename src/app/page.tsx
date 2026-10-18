@@ -21,7 +21,7 @@ const skillHighlights = [
   {
     title: 'Standards & Quality',
     icon: ShieldCheck,
-    skills: ['WCAG Accessibility', 'Semantic HTML5', 'Agile / Scrum'],
+    skills: ['WCAG Accessibility', 'Responsive Design', 'Semantic HTML5', 'Agile / Scrum'],
   },
 ];
 
