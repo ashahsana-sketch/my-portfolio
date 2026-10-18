@@ -17,21 +17,33 @@ interface Project {
 const projectsData: Project[] = [
   {
     id: 'omsorghub',
-    title: 'OmsorgHub',
+    title: 'OmsorgHub (Elderly Care Dashboard)',
     category: 'Full-Stack',
     description: 'A comprehensive care center management and employee rostering web application featuring caregiver directories, client scheduling, and weekly work-hour compliance tracking.',
     tags: ['Next.js', 'React', 'Prisma', 'Tailwind CSS', 'TypeScript'],
+    liveUrl: 'https://omsorg-dashboard-alpha.vercel.app/',
     githubUrl: 'https://github.com/ashahsana-sketch',
     featured: true,
   },
   {
-    id: 'ecommerce',
+    id: 'ecommerce-customer',
     title: 'Modern E-Commerce Web Shop',
     category: 'Next.js',
-    description: 'Collaborative team e-commerce platform implementing dynamic category introductions, breadcrumb navigation, full-text search, and secure Supabase authentication workflows.',
+    description: 'Collaborative team e-commerce customer-facing platform implementing dynamic category introductions, breadcrumb navigation, search functionality, and Supabase authentication.',
     tags: ['Next.js', 'Supabase', 'TypeScript', 'Tailwind CSS', 'Shadcn UI'],
+    liveUrl: 'https://web-shop-group-4.vercel.app/en',
     githubUrl: 'https://github.com/ashahsana-sketch',
     featured: true,
+  },
+  {
+    id: 'ecommerce-admin',
+    title: 'E-Commerce Admin Dashboard',
+    category: 'Full-Stack',
+    description: 'Administrative side of the e-commerce platform designed for product management, inventory oversight, order tracking, and secure database operations.',
+    tags: ['Next.js', 'Supabase', 'TypeScript', 'Tailwind CSS'],
+    liveUrl: 'https://web-shop-group-4.vercel.app/admin',
+    githubUrl: 'https://github.com/ashahsana-sketch',
+    featured: false,
   },
   {
     id: 'portfolio',
@@ -130,16 +142,28 @@ export default function ProjectsPage() {
                 ))}
               </div>
 
-              {project.githubUrl && (
-                <a 
-                  href={project.githubUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-sm font-semibold text-sky-400 hover:text-sky-300 transition"
-                >
-                  View Repository <ExternalLink className="w-4 h-4" />
-                </a>
-              )}
+              <div className="flex items-center gap-4 pt-2 border-t border-slate-800/80">
+                {project.liveUrl && (
+                  <a 
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-sky-400 hover:text-sky-300 transition"
+                  >
+                    Live Demo <ExternalLink className="w-4 h-4" />
+                  </a>
+                )}
+                {project.githubUrl && (
+                  <a 
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-slate-400 hover:text-slate-200 transition"
+                  >
+                    Repository <Code className="w-4 h-4" />
+                  </a>
+                )}
+              </div>
             </div>
           </div>
         ))}

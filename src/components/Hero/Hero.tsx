@@ -4,7 +4,7 @@ import { Code, Globe, Mail } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="pt-24 pb-12 md:pt-28 md:pb-16 flex flex-col items-center justify-center text-center px-6 relative overflow-hidden">
+    <section className="pt-24 pb-12 md:pt-28 md:pb-16 bg-slate-900 flex flex-col items-center justify-center text-center px-6 relative overflow-hidden">
       {/* Background soft glow effect */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-sky-500/10 blur-[120px] rounded-full pointer-events-none" />
 

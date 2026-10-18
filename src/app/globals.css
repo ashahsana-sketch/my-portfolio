@@ -5,6 +5,36 @@
   --foreground: #171717;
 }
 
+@theme {
+  /* ========================================================
+     PORTFOLIO DESIGN SYSTEM THEME TOKENS
+     Update these tokens to instantly switch your entire color scheme!
+     
+     Current Scheme: Sleek Indigo & Deep Violet
+       --color-brand-light: #818cf8;
+       --color-brand: #6366f1;
+       --color-brand-hover: #4f46e5;
+       --color-secondary-light: #a78bfa;
+       --color-secondary: #8b5cf6;
+       --color-secondary-hover: #7c3aed;
+
+     Alternative Scheme: Emerald Green & Teal
+       --color-brand-light: #34d399;
+       --color-brand: #10b981;
+       --color-brand-hover: #059669;
+       --color-secondary-light: #2dd4bf;
+       --color-secondary: #14b8a6;
+       --color-secondary-hover: #0d9488;
+     ======================================================== */
+  --color-brand-light: #818cf8;
+  --color-brand: #6366f1;
+  --color-brand-hover: #4f46e5;
+  
+  --color-secondary-light: #a78bfa;
+  --color-secondary: #8b5cf6;
+  --color-secondary-hover: #7c3aed;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
