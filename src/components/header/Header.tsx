@@ -31,7 +31,7 @@ export default function Header() {
             className="w-auto h-9 transition-transform group-hover:scale-105"
             priority
           />
-          <span className="text-xl font-bold text-slate-100 group-hover:text-sky-400 transition">
+          <span className="text-xl font-bold text-slate-100 group-hover:text-brand-light transition">
             Portfolio
           </span>
         </Link>
@@ -44,8 +44,8 @@ export default function Header() {
               <Link
                 key={link.name}
                 href={link.href}
-                className={`transition hover:text-sky-400 ${
-                  isActive ? 'text-sky-400 font-semibold' : ''
+                className={`transition hover:text-brand-light ${
+                  isActive ? 'text-brand-light font-semibold' : ''
                 }`}
               >
                 {link.name}
@@ -56,8 +56,8 @@ export default function Header() {
             href="/contact"
             className={`px-4 py-2 rounded-lg transition font-medium ${
               pathname === '/contact'
-                ? 'bg-sky-600 text-white shadow-md shadow-sky-500/25'
-                : 'bg-sky-500 hover:bg-sky-600 text-white'
+                ? 'bg-brand-hover text-white shadow-md shadow-brand/25'
+                : 'bg-brand hover:bg-brand-hover text-white'
             }`}
           >
             Contact
@@ -85,7 +85,7 @@ export default function Header() {
                 href={link.href}
                 onClick={() => setIsOpen(false)}
                 className={`transition ${
-                  isActive ? 'text-sky-400 font-semibold' : 'text-slate-300 hover:text-sky-400'
+                  isActive ? 'text-brand-light font-semibold' : 'text-slate-300 hover:text-brand-light'
                 }`}
               >
                 {link.name}
@@ -96,7 +96,7 @@ export default function Header() {
             href="/contact"
             onClick={() => setIsOpen(false)}
             className={`transition font-semibold ${
-              pathname === '/contact' ? 'text-sky-400 font-bold' : 'text-slate-300 hover:text-sky-400'
+              pathname === '/contact' ? 'text-brand-light font-bold' : 'text-slate-300 hover:text-brand-light'
             }`}
           >
             Contact

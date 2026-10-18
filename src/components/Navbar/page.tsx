@@ -19,7 +19,7 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 w-full bg-slate-950/80 backdrop-blur-md z-50 border-b border-slate-800">
       <nav className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 text-xl font-bold text-sky-400">
+        <Link href="/" className="flex items-center gap-2 text-xl font-bold text-brand-light">
           <Code className="w-6 h-6" /> Portfolio.
         </Link>
 
@@ -31,8 +31,8 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className={`transition hover:text-sky-400 ${
-                  isActive ? 'text-sky-400 font-semibold' : ''
+                className={`transition hover:text-brand-light ${
+                  isActive ? 'text-brand-light font-semibold' : ''
                 }`}
               >
                 {link.name}
@@ -41,7 +41,7 @@ export default function Navbar() {
           })}
           <Link
             href="/contact"
-            className="px-4 py-2 bg-sky-500 hover:bg-sky-600 text-white rounded-lg transition"
+            className="px-4 py-2 bg-brand hover:bg-brand-hover text-white rounded-lg transition"
           >
             Contact
           </Link>
@@ -65,7 +65,7 @@ export default function Navbar() {
               key={link.name}
               href={link.href}
               onClick={() => setIsOpen(false)}
-              className="text-slate-300 hover:text-sky-400 transition"
+              className="text-slate-300 hover:text-brand-light transition"
             >
               {link.name}
             </Link>
@@ -73,7 +73,7 @@ export default function Navbar() {
           <Link
             href="/contact"
             onClick={() => setIsOpen(false)}
-            className="text-sky-400 font-semibold"
+            className="text-brand-light font-semibold"
           >
             Contact
           </Link>

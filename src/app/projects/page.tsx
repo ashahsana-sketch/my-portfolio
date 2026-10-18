@@ -67,7 +67,7 @@ export default function ProjectsPage() {
     <main className="pt-24 pb-16 px-6 max-w-7xl mx-auto">
       {/* Header section */}
       <div className="mb-12 text-center md:text-left">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-500/10 border border-sky-500/30 text-sky-400 text-xs font-semibold mb-4">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand/10 border border-brand/30 text-brand-light text-xs font-semibold mb-4">
           <Layers className="w-3.5 h-3.5" /> Featured Work
         </div>
         <h1 className="text-3xl md:text-4xl font-extrabold text-slate-100 mb-3">
@@ -86,7 +86,7 @@ export default function ProjectsPage() {
             onClick={() => setActiveFilter(category)}
             className={`px-4 py-2 rounded-lg text-sm font-medium transition ${
               activeFilter === category
-                ? 'bg-sky-500 text-white shadow-lg shadow-sky-500/25'
+                ? 'bg-brand text-white shadow-lg shadow-brand/25'
                 : 'bg-slate-900 text-slate-400 hover:text-slate-200 border border-slate-800'
             }`}
           >
@@ -101,12 +101,12 @@ export default function ProjectsPage() {
           <div 
             key={project.id}
             className={`group rounded-2xl bg-slate-900/60 border ${
-              project.featured ? 'border-sky-500/40 shadow-xl shadow-sky-500/5' : 'border-slate-800'
-            } p-6 flex flex-col justify-between transition hover:border-sky-500/80 hover:-translate-y-1`}
+              project.featured ? 'border-brand/40 shadow-xl shadow-brand/5' : 'border-slate-800'
+            } p-6 flex flex-col justify-between transition hover:border-brand/80 hover:-translate-y-1`}
           >
             <div>
               <div className="flex items-center justify-between mb-4">
-                <span className="text-xs font-semibold uppercase tracking-wider px-2.5 py-1 rounded bg-sky-500/10 text-sky-400 border border-sky-500/20">
+                <span className="text-xs font-semibold uppercase tracking-wider px-2.5 py-1 rounded bg-brand/10 text-brand-light border border-brand/20">
                   {project.category}
                 </span>
                 <div className="flex items-center gap-3 text-slate-400">
@@ -116,7 +116,7 @@ export default function ProjectsPage() {
                       target="_blank" 
                       rel="noopener noreferrer"
                       aria-label="GitHub Repository"
-                      className="hover:text-sky-400 transition flex items-center gap-1.5 text-xs"
+                      className="hover:text-brand-light transition flex items-center gap-1.5 text-xs"
                     >
                       <Code className="w-4 h-4" /> Code
                     </a>
@@ -124,7 +124,7 @@ export default function ProjectsPage() {
                 </div>
               </div>
 
-              <h3 className="text-xl font-bold text-slate-100 group-hover:text-sky-400 transition mb-2">
+              <h3 className="text-xl font-bold text-slate-100 group-hover:text-brand-light transition mb-2">
                 {project.title}
               </h3>
               <p className="text-slate-400 text-sm leading-relaxed mb-6">
@@ -148,7 +148,7 @@ export default function ProjectsPage() {
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-sm font-semibold text-sky-400 hover:text-sky-300 transition"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-brand-light hover:text-brand transition"
                   >
                     Live Demo <ExternalLink className="w-4 h-4" />
                   </a>

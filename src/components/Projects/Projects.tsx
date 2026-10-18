@@ -30,11 +30,11 @@ export default function Projects() {
     <section id="projects" className="py-24 bg-slate-900/40 text-slate-100 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <span className="text-sky-400 font-medium tracking-wider uppercase text-sm">
+          <span className="text-brand-light font-medium tracking-wider uppercase text-sm">
             Portfolio
           </span>
           <h2 className="text-3xl md:text-5xl font-bold mt-4">
-            Featured <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-indigo-500">Projects</span>
+            Featured <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-light to-secondary">Projects</span>
           </h2>
           <p className="text-slate-400 mt-4 max-w-xl mx-auto">
             A selection of web applications and projects I have worked on.
@@ -45,7 +45,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div 
               key={index}
-              className="rounded-3xl border border-slate-800 bg-slate-900/50 p-6 flex flex-col justify-between hover:border-sky-500/50 transition duration-300"
+              className="rounded-3xl border border-slate-800 bg-slate-900/50 p-6 flex flex-col justify-between hover:border-brand/50 transition duration-300"
             >
               <div>
                 <h3 className="text-2xl font-semibold mb-3 text-white">{project.title}</h3>
@@ -56,7 +56,7 @@ export default function Projects() {
                   {project.tags.map((tag, tagIndex) => (
                     <span 
                       key={tagIndex}
-                      className="px-3 py-1 text-xs font-medium bg-sky-500/10 text-sky-400 rounded-full border border-sky-500/20"
+                      className="px-3 py-1 text-xs font-medium bg-brand/10 text-brand-light rounded-full border border-brand/20"
                     >
                       {tag}
                     </span>
@@ -69,7 +69,7 @@ export default function Projects() {
                   href={project.githubUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm text-slate-300 hover:text-sky-400 transition"
+                  className="flex items-center gap-2 text-sm text-slate-300 hover:text-brand-light transition"
                 >
                   <FaGithub size={18} /> Code
                 </a>
@@ -77,7 +77,7 @@ export default function Projects() {
                   href={project.liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm text-slate-300 hover:text-sky-400 transition ml-auto"
+                  className="flex items-center gap-2 text-sm text-slate-300 hover:text-brand-light transition ml-auto"
                 >
                   <ExternalLink size={18} /> Live Demo
                 </a>

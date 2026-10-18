@@ -7,25 +7,25 @@ const skillCategories = [
     title: 'Frontend Architecture',
     icon: Layers,
     skills: ['React', 'Next.js App Router', 'TypeScript', 'Tailwind CSS', 'Shadcn UI', 'Semantic HTML5', 'CSS Grid & Flexbox'],
-    description: 'Building responsive, high-performance component-driven web applications[cite: 1, 3].'
+    description: 'Building responsive, high-performance component-driven web applications.'
   },
   {
     title: 'Systems & Logic',
     icon: Cpu,
     skills: ['State Management', 'API Integration (REST)', 'Asynchronous JS', 'Analytical Problem Solving', 'Responsive Design'],
-    description: 'Translating complex data flows into clean, structured, and maintainable application logic[cite: 1, 3].'
+    description: 'Translating complex data flows into clean, structured, and maintainable application logic.'
   },
   {
     title: 'Engineering & Tools',
     icon: Wrench,
     skills: ['Git & GitHub', 'Figma (UI/UX Prototyping)', 'Linux / Windows Environments', 'Vercel Deployment', 'C & VHDL'],
-    description: 'Version control, collaborative workflows, wireframing, and cross-environment testing[cite: 1, 3].'
+    description: 'Version control, collaborative workflows, wireframing, and cross-environment testing.'
   },
   {
     title: 'Quality & Standards',
     icon: ShieldCheck,
     skills: ['WCAG Accessibility', 'WAVE Tooling', 'Screen Reader Optimization', 'Agile / Scrum Methodologies'],
-    description: 'Ensuring accessible, inclusive, and rigorously tested digital experiences[cite: 3].'
+    description: 'Ensuring accessible, inclusive, and rigorously tested digital experiences.'
   }
 ];
 
@@ -34,7 +34,7 @@ export default function SkillsPage() {
     <main className="pt-24 pb-16 px-6 max-w-7xl mx-auto">
       {/* Header */}
       <div className="text-center max-w-2xl mx-auto mb-16">
-        <span className="text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full bg-sky-500/10 text-sky-400 border border-sky-500/20">
+        <span className="text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full bg-brand/10 text-brand-light border border-brand/20">
           Expertise
         </span>
         <h1 className="text-3xl md:text-4xl font-extrabold text-slate-100 mt-4 mb-3">
@@ -52,14 +52,14 @@ export default function SkillsPage() {
           return (
             <div 
               key={category.title}
-              className="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 transition hover:border-sky-500/80 hover:shadow-lg hover:shadow-sky-500/10 group flex flex-col justify-between"
+              className="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 transition hover:border-brand/80 hover:shadow-lg hover:shadow-brand/10 group flex flex-col justify-between"
             >
               <div>
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="p-3 rounded-xl bg-sky-500/10 border border-sky-500/20 text-sky-400 group-hover:scale-110 transition">
+                  <div className="p-3 rounded-xl bg-brand/10 border border-brand/20 text-brand-light group-hover:scale-110 transition">
                     <IconComponent className="w-6 h-6" />
                   </div>
-                  <h3 className="text-xl font-bold text-slate-100 group-hover:text-sky-400 transition">
+                  <h3 className="text-xl font-bold text-slate-100 group-hover:text-brand-light transition">
                     {category.title}
                   </h3>
                 </div>

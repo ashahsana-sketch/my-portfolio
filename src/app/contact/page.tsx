@@ -36,7 +36,7 @@ export default function ContactPage() {
         <div className="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between">
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="p-3 rounded-xl bg-sky-500/10 border border-sky-500/20 text-sky-400">
+              <div className="p-3 rounded-xl bg-brand/10 border border-brand/20 text-brand-light">
                 <Mail className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-slate-100">Email Direct</h3>
@@ -48,7 +48,7 @@ export default function ContactPage() {
 
           <button
             onClick={handleCopyEmail}
-            className="w-full py-2.5 px-4 rounded-xl bg-sky-500 hover:bg-sky-600 text-white font-medium text-sm transition flex items-center justify-center gap-2 shadow-lg shadow-sky-500/20"
+            className="w-full py-2.5 px-4 rounded-xl bg-brand hover:bg-brand-hover text-white font-medium text-sm transition flex items-center justify-center gap-2 shadow-lg shadow-brand/25"
           >
             {copied ? (
               <>
@@ -66,7 +66,7 @@ export default function ContactPage() {
         <div className="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between">
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="p-3 rounded-xl bg-sky-500/10 border border-sky-500/20 text-sky-400">
+              <div className="p-3 rounded-xl bg-brand/10 border border-brand/20 text-brand-light">
                 <MapPin className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-slate-100">Location & Profiles</h3>
@@ -81,17 +81,17 @@ export default function ContactPage() {
               href="https://www.linkedin.com/in/ashahsana/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 py-2.5 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium text-sm transition flex items-center justify-center gap-2 border border-slate-700"
+              className="flex-1 py-2.5 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium text-sm transition flex items-center justify-center gap-2 border border-slate-700 hover:border-brand/40"
             >
-              <Globe className="w-4 h-4 text-sky-400" /> LinkedIn
+              <Globe className="w-4 h-4 text-brand-light" /> LinkedIn
             </a>
             <a
               href="https://github.com/ashahsana-sketch"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 py-2.5 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium text-sm transition flex items-center justify-center gap-2 border border-slate-700"
+              className="flex-1 py-2.5 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium text-sm transition flex items-center justify-center gap-2 border border-slate-700 hover:border-brand/40"
             >
-              <Code className="w-4 h-4 text-sky-400" /> GitHub
+              <Code className="w-4 h-4 text-brand-light" /> GitHub
             </a>
           </div>
         </div>

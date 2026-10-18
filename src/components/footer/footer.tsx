@@ -1,15 +1,8 @@
-'use client';
-
-import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Code, Globe, Heart } from 'lucide-react';
 
 export default function Footer() {
-  const [currentYear, setCurrentYear] = useState<number | string>('2026');
-
-  useEffect(() => {
-    setCurrentYear(new Date().getFullYear());
-  }, []);
+  const currentYear = 2026;
 
   return (
     <footer className="bg-slate-950 border-t border-slate-800/80 text-slate-400 py-12 px-6">
@@ -19,7 +12,7 @@ export default function Footer() {
         <div className="space-y-3">
           <div className="flex items-center gap-2">
             <span className="font-bold text-lg text-slate-100 tracking-tight">Sana Islam</span>
-            <span className="text-xs px-2 py-0.5 rounded-full bg-sky-500/10 text-sky-400 border border-sky-500/20 font-semibold">
+            <span className="text-xs px-2 py-0.5 rounded-full bg-brand/10 text-brand-light border border-brand/20 font-semibold">
               Frontend Dev
             </span>
           </div>
@@ -37,19 +30,19 @@ export default function Footer() {
           <h4 className="text-sm font-semibold text-slate-200 uppercase tracking-wider">Navigation</h4>
           <ul className="space-y-2 text-sm">
             <li>
-              <Link href="/" className="hover:text-sky-400 transition">Home</Link>
+              <Link href="/" className="hover:text-brand-light transition">Home</Link>
             </li>
             <li>
-              <Link href="/about" className="hover:text-sky-400 transition">About</Link>
+              <Link href="/about" className="hover:text-brand-light transition">About</Link>
             </li>
             <li>
-              <Link href="/projects" className="hover:text-sky-400 transition">Projects</Link>
+              <Link href="/projects" className="hover:text-brand-light transition">Projects</Link>
             </li>
             <li>
-              <Link href="/skills" className="hover:text-sky-400 transition">Skills</Link>
+              <Link href="/skills" className="hover:text-brand-light transition">Skills</Link>
             </li>
             <li>
-              <Link href="/contact" className="hover:text-sky-400 transition">Contact</Link>
+              <Link href="/contact" className="hover:text-brand-light transition">Contact</Link>
             </li>
           </ul>
         </div>
@@ -63,7 +56,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub Profile"
-              className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 hover:text-sky-400 hover:border-sky-500/50 transition"
+              className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 hover:text-brand-light hover:border-brand/50 transition"
             >
               <Code className="w-4 h-4" />
             </a>
@@ -72,14 +65,14 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn Profile"
-              className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 hover:text-sky-400 hover:border-sky-500/50 transition"
+              className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 hover:text-brand-light hover:border-brand/50 transition"
             >
               <Globe className="w-4 h-4" />
             </a>
           </div>
           <div className="pt-2">
             <span className="inline-flex items-center gap-1.5 text-xs text-slate-400 bg-slate-900 px-3 py-1.5 rounded-lg border border-slate-800">
-              <span className="w-1.5 h-1.5 rounded-full bg-sky-400"></span>
+              <span className="w-1.5 h-1.5 rounded-full bg-brand-light"></span>
               WCAG & Semantic HTML Compliant
             </span>
           </div>
@@ -91,7 +84,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
         <p>&copy; {currentYear} Sana Islam. All rights reserved.</p>
         <p className="flex items-center gap-1">
-          Built with Next.js, Tailwind CSS & <Heart className="w-3.5 h-3.5 text-sky-400 fill-sky-400" />
+          Built with Next.js, Tailwind CSS & <Heart className="w-3.5 h-3.5 text-brand-light fill-brand-light" />
         </p>
       </div>
     </footer>

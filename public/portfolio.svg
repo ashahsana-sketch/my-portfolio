@@ -1,6 +1,6 @@
 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
   <!-- Outer glowing card box -->
-  <rect width="40" height="40" rx="10" fill="#020617" stroke="#0ea5e9" stroke-width="1.5" />
+  <rect width="40" height="40" rx="10" fill="#020617" stroke="#6366f1" stroke-width="1.5" />
   
   <!-- Subtle inner shadow/depth accent -->
   <rect x="2" y="2" width="36" height="36" rx="8" fill="url(#bg-gradient)" opacity="0.4" />
@@ -12,13 +12,13 @@
 
   <defs>
     <linearGradient id="bg-gradient" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0369a1" stop-opacity="0.3" />
+      <stop stop-color="#4338ca" stop-opacity="0.3" />
       <stop offset="1" stop-color="#1e1b4b" stop-opacity="0.6" />
     </linearGradient>
 
     <linearGradient id="text-gradient" x1="10" y1="10" x2="30" y2="30" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#38bdf8" />
-      <stop offset="1" stop-color="#818cf8" />
+      <stop stop-color="#818cf8" />
+      <stop offset="1" stop-color="#a78bfa" />
     </linearGradient>
   </defs>
 </svg>
