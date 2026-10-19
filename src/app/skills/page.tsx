@@ -65,11 +65,11 @@ export default function SkillsPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         
         {/* Section Header */}
-        <header className="mb-10 sm:mb-14 text-center md:text-left">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800 border border-slate-700 text-slate-300 text-xs sm:text-sm font-medium mb-4 backdrop-blur-sm shadow-inner">
+        <header className="mb-10 sm:mb-14 text-center mt-20 md:text-left">
+          {/* <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800 border border-slate-700 text-slate-300 text-xs sm:text-sm font-medium mb-4 backdrop-blur-sm shadow-inner">
             <Code2 className="w-4 h-4 text-brand-light" aria-hidden="true" /> 
             <span>Technical Expertise</span>
-          </div>
+          </div> */}
           <h1 
             id="skills-heading" 
             className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-100 tracking-tight mb-3"

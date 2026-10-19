@@ -58,15 +58,19 @@ export default function Hero() {
   className="object-cover object-top" 
 />
             </div>
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800 border border-brand/30 text-slate-200 text-xs sm:text-sm font-semibold">
+            {/* <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800 border border-brand/30 text-slate-200 text-xs sm:text-sm font-semibold">
               Welcome to my portfolio
-            </div>
+            </div> */}
+            {/* Main Headline */}
+         <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15]">
+  Hello, <br /> I&apos;m <span className="text-brand-light">Sana</span>
+</h1>
           </div>
 
-          {/* Main Headline */}
+          {/* Main Headline
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15]">
             Hi, I&apos;m <span className="text-brand-light">Sana</span>
-          </h1>
+          </h1> */}
 
           {/* Subtitle */}
           <p className="text-slate-300 text-sm sm:text-base lg:text-lg max-w-xl leading-relaxed">

@@ -22,11 +22,11 @@ export default function BackgroundPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         
         {/* Left-Aligned Header */}
-        <header className="text-left max-w-3xl mb-10 sm:mb-14">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800 border border-slate-700 text-slate-300 text-xs sm:text-sm font-medium mb-4 backdrop-blur-sm shadow-inner">
+        <header className="text-left max-w-3xl mt-20 mb-10 sm:mb-14">
+          {/* <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800 border border-slate-700 text-slate-300 text-xs sm:text-sm font-medium mb-4 backdrop-blur-sm shadow-inner">
             <Award className="w-3.5 h-3.5 text-brand-light" aria-hidden="true" />
             <span>Background & Qualifications</span>
-          </div>
+          </div> */}
           <h1 
             id="background-heading" 
             className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-100 tracking-tight mb-4"

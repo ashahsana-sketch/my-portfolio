@@ -193,11 +193,11 @@ export default function Certifications() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         
         {/* Header */}
-        <header className="mb-10 sm:mb-14 text-center md:text-left">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800 border border-slate-700 text-slate-300 text-xs sm:text-sm font-medium mb-4 backdrop-blur-sm shadow-inner">
+        <header className="mb-10 mt-20 sm:mb-14 text-center md:text-left">
+          {/* <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800 border border-slate-700 text-slate-300 text-xs sm:text-sm font-medium mb-4 backdrop-blur-sm shadow-inner">
             <Award className="w-3.5 h-3.5 text-brand-light" aria-hidden="true" /> 
             <span>Professional Learning & Credentials</span>
-          </div>
+          </div> */}
           <h2 
             id="certifications-heading" 
             className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-100 tracking-tight mb-3"
