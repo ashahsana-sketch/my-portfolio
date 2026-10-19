@@ -54,7 +54,7 @@ export default function SkillsPage() {
   return (
     <main 
       aria-labelledby="skills-heading" 
-      className="w-full min-h-screen py-16 sm:py-24 px-4 sm:px-8 lg:px-16 bg-slate-900 relative overflow-hidden"
+      className="w-full min-h-screen py-16 sm:py-24 bg-slate-900 relative overflow-hidden"
     >
       {/* Background soft glow effect */}
       <div 
@@ -62,8 +62,7 @@ export default function SkillsPage() {
         className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] sm:w-[600px] lg:w-[800px] h-[350px] sm:h-[600px] lg:h-[800px] bg-brand/10 blur-[100px] sm:blur-[160px] rounded-full pointer-events-none" 
       />
 
-      {/* Full-Screen Inner Content Container */}
-      <div className="w-full max-w-[1600px] mx-auto relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         
         {/* Section Header */}
         <header className="mb-10 sm:mb-14 text-center md:text-left">

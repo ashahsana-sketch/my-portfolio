@@ -16,7 +16,7 @@ export default function ContactPage() {
   return (
     <main 
       aria-labelledby="contact-heading" 
-      className="w-full min-h-screen py-16 sm:py-24 px-4 sm:px-8 lg:px-16 bg-slate-900 relative overflow-hidden"
+      className="w-full min-h-screen py-16 sm:py-24 bg-slate-900 relative overflow-hidden"
     >
       {/* Background soft glow effect */}
       <div 
@@ -24,8 +24,7 @@ export default function ContactPage() {
         className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] sm:w-[600px] lg:w-[800px] h-[350px] sm:h-[600px] lg:h-[800px] bg-brand/10 blur-[100px] sm:blur-[160px] rounded-full pointer-events-none" 
       />
 
-      {/* Full-Screen Inner Content Container */}
-      <div className="w-full max-w-[1600px] mx-auto relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
 
         {/* Section Header */}
         <header className="mb-10 sm:mb-14 text-center md:text-left">
@@ -48,7 +47,7 @@ export default function ContactPage() {
         <div 
           role="region" 
           aria-label="Contact methods" 
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6 sm:gap-8 w-full"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 sm:gap-8 w-full"
         >
           
           {/* CARD 1: Email Direct */}
@@ -190,7 +189,7 @@ export default function ContactPage() {
                 Based in <strong className="text-white">Stockholm, Sweden</strong>
               </p>
               <p className="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6">
-                Full Swedish citizenship. Available for hybrid, on-site in Stockholm, or remote development roles across Sweden and EU time zones.
+                Swedish citizenship. Available for hybrid, on-site in Stockholm, or remote development roles across Sweden and EU time zones.
               </p>
             </div>
 

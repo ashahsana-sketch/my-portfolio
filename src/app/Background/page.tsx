@@ -11,7 +11,7 @@ export default function BackgroundPage() {
   return (
     <main 
       aria-labelledby="background-heading" 
-      className="w-full min-h-screen pt-24 pb-20 sm:px-8 lg:px-16 bg-slate-900 relative overflow-hidden"
+      className="w-full min-h-screen pt-24 pb-20 bg-slate-900 relative overflow-hidden"
     >
       {/* Background soft glow effect */}
       <div 
@@ -19,7 +19,7 @@ export default function BackgroundPage() {
         className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] sm:w-[600px] lg:w-[800px] h-[350px] sm:h-[600px] lg:h-[800px] bg-brand/10 blur-[100px] sm:blur-[160px] rounded-full pointer-events-none" 
       />
 
-      <div className="w-full max-w-[1400px] mx-auto relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         
         {/* Left-Aligned Header */}
         <header className="text-left max-w-3xl mb-10 sm:mb-14">

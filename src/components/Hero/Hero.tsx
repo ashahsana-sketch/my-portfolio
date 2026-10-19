@@ -48,13 +48,13 @@ export default function Hero() {
           
           {/* Header Row with Photo & Welcome Badge */}
           <div className="flex flex-wrap sm:flex-nowrap items-center gap-3 sm:gap-4">
-            <div className="relative w-32 h-32 sm:w-20 sm:h-20 rounded-full overflow-hidden border-2 border-brand/50 shadow-lg shadow-brand/20 shrink-0">
+            <div className="relative w-40 h-40 sm:w-48 sm:h-48 lg:w-56 lg:h-56 rounded-full overflow-hidden border-2 border-brand/50 shadow-lg shadow-brand/20 shrink-0">
              <Image 
   src="/sana-photo.jpeg" 
   alt="Sana" 
   fill 
   priority 
-  sizes="(max-width: 640px) 128px, 80px"
+  sizes="(max-width: 640px) 160px, (max-width: 1024px) 192px, 224px"
   className="object-cover object-top" 
 />
             </div>

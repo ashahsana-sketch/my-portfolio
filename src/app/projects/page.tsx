@@ -117,7 +117,7 @@ export default function ProjectsPage() {
   return (
     <main 
       aria-labelledby="projects-heading" 
-      className="w-full min-h-screen py-16 sm:py-24 px-4 sm:px-8 lg:px-16 bg-slate-900 relative overflow-hidden"
+      className="w-full min-h-screen py-16 sm:py-24 bg-slate-900 relative overflow-hidden"
     >
       {/* Background soft glow effect */}
       <div 
@@ -125,8 +125,7 @@ export default function ProjectsPage() {
         className="absolute top-1/4 right-10 -translate-y-1/2 w-[350px] sm:w-[600px] lg:w-[800px] h-[350px] sm:h-[600px] lg:h-[800px] bg-brand/10 blur-[100px] sm:blur-[160px] rounded-full pointer-events-none" 
       />
 
-      {/* Full-Screen Inner Content Container */}
-      <div className="w-full max-w-[1600px] mx-auto relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
 
         {/* Header Section */}
         <header className="mb-10 mt-20 sm:mb-14 text-center md:text-left">
@@ -174,7 +173,7 @@ export default function ProjectsPage() {
         <div 
           role="feed" 
           aria-busy="false"
-          className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8 w-full"
+          className="grid grid-cols-1 md:grid-cols-2  gap-6 sm:gap-8 w-full"
         >
           {filteredProjects.map((project) => (
             <article 
@@ -186,9 +185,9 @@ export default function ProjectsPage() {
               } p-4 sm:p-5 flex flex-col justify-between transition-all duration-300 hover:border-slate-600 hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-brand/60 backdrop-blur-md w-full overflow-hidden shadow-xl`}
             >
               <div>
-                {/* Taller Image Preview Container with Top Padding */}
+                {/* Wide image preview aligned with the card content */}
                 {project.imageSrc && (
-                  <div className="relative w-full h-64 sm:h-72 overflow-hidden rounded-xl mb-5 border border-slate-800/80 bg-slate-900/90">
+                  <div className="relative w-full aspect-[2/1] overflow-hidden rounded-xl mb-5 border border-slate-800/80 bg-slate-900/90">
                     <Image
                       src={project.imageSrc}
                       alt={`${project.title} Preview`}
