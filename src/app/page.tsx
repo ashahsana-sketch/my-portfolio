@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import { Layers, Cpu, Wrench, ShieldCheck, ArrowRight } from 'lucide-react';
 import Hero from '@/components/Hero/Hero';
-import CertificationsSection from '@/components/Certifications/Certifications';
+import FeaturedProjects from '@/components/featureproject';
+import FeaturedCertifications from '@/components/featurecertification';
+import FeaturedEducation from '@/components/featureEducation';
 
 const skillHighlights = [
   {
@@ -28,9 +30,11 @@ const skillHighlights = [
 
 export default function HomePage() {
   return (
-    <main className="pt-20">
+    <main className="bg-slate-900 mt-4 text-slate-100 min-h-screen">
       <Hero />
-      <CertificationsSection />
+      <FeaturedEducation />
+      <FeaturedCertifications />
+      <FeaturedProjects />
     </main>
   );
 }

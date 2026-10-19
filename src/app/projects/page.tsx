@@ -129,11 +129,11 @@ export default function ProjectsPage() {
       <div className="w-full max-w-[1600px] mx-auto relative z-10">
 
         {/* Header Section */}
-        <header className="mb-10 sm:mb-14 text-center md:text-left">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800 border border-slate-700 text-slate-300 text-xs sm:text-sm font-medium mb-4 backdrop-blur-sm shadow-inner">
+        <header className="mb-10 mt-20 sm:mb-14 text-center md:text-left">
+          {/* <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800 border border-slate-700 text-slate-300 text-xs sm:text-sm font-medium mb-4 backdrop-blur-sm shadow-inner">
             <Sparkles className="w-4 h-4 text-brand-light" aria-hidden="true" />
             <span>Featured Work</span>
-          </div>
+          </div> */}
           <h1 
             id="projects-heading" 
             className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-100 tracking-tight mb-3"

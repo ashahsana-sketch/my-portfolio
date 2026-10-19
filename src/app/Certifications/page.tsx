@@ -172,7 +172,7 @@ const certificationsData: Certification[] = [
 
 const categories = ['All', 'Next.js & React', 'CSS & UI Frameworks', 'HTML & Core Web', 'UI/UX Design', 'IT & Systems'] as const;
 
-export default function CertificationsSection() {
+export default function Certifications() {
   const [activeFilter, setActiveFilter] = useState<Certification['category']>('All');
 
   const filteredCerts = activeFilter === 'All'

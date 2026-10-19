@@ -16,29 +16,30 @@ export default function Header() {
     { name: 'Certifications', href: '/Certifications' },
     { name: 'Skills', href: '/skills' },
     { name: 'Projects', href: '/projects' },
+    { name: 'Contact', href: '/contact' },
   ];
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-slate-950/80 backdrop-blur-md z-50 border-b border-slate-800">
-      <nav className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+    <header className="fixed top-0 left-0 w-full bg-slate-950/90 backdrop-blur-md z-50 border-b border-slate-800">
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
         
-        {/* Logo Integration with auto aspect-ratio styling */}
+        {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
           <Image 
             src="/portfolio.svg" 
             alt="Portfolio Logo" 
             width={36} 
             height={36} 
-            className="w-auto h-9 transition-transform group-hover:scale-105"
+            className="w-auto h-8 sm:h-9 transition-transform group-hover:scale-105"
             priority
           />
-          <span className="text-xl font-bold text-slate-100 group-hover:text-brand-light transition">
+          <span className="text-lg sm:text-xl font-bold text-slate-100 group-hover:text-brand-light transition">
             Portfolio
           </span>
         </Link>
 
         {/* Desktop Navigation Links */}
-        <div className="hidden md:flex  items-center gap-6 text-slate-300 font-medium">
+        <div className="hidden md:flex items-center gap-6 text-slate-300 font-medium text-sm sm:text-base">
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
             return (
@@ -53,22 +54,22 @@ export default function Header() {
               </Link>
             );
           })}
-          <Link
+          {/* <Link
             href="/contact"
-            className={`px-4 py-2 rounded-lg transition font-medium ${
+            className={`px-4 py-2 rounded-lg transition font-medium text-sm ${
               pathname === '/contact'
                 ? 'bg-brand-hover text-white shadow-md shadow-brand/25'
                 : 'bg-brand hover:bg-brand-hover text-white'
             }`}
           >
             Contact
-          </Link>
+          </Link> */}
         </div>
 
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-slate-300"
+          className="md:hidden text-slate-300 p-2 rounded-lg hover:bg-slate-900 transition"
           aria-label="Toggle navigation menu"
         >
           {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -77,7 +78,7 @@ export default function Header() {
 
       {/* Mobile Menu Dropdown */}
       {isOpen && (
-        <div className="md:hidden bg-slate-900 border-b border-slate-800 px-6 py-4 flex flex-col gap-4">
+        <div className="md:hidden bg-slate-950/95 border-b border-slate-800 px-6 py-4 flex flex-col gap-4 backdrop-blur-md">
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
             return (

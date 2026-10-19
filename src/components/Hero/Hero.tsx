@@ -41,7 +41,7 @@ export default function Hero() {
       {/* Background soft glow effect */}
       <div className="absolute top-1/2 left-1/2 lg:left-1/4 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] bg-brand/10 blur-[100px] sm:blur-[140px] rounded-full pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-12 items-center relative z-10">
+      <div className="max-w-7xl mt-4 mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-12 items-center relative z-10">
         
         {/* LEFT COLUMN: Profile, Intro & CTAs */}
         <div className="lg:col-span-7 flex flex-col items-start text-left space-y-4 sm:space-y-6">

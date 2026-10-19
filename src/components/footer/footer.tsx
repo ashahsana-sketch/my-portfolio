@@ -33,7 +33,7 @@ export default function Footer() {
               <Link href="/" className="hover:text-brand-light transition">Home</Link>
             </li>
             <li>
-              <Link href="/about" className="hover:text-brand-light transition">About</Link>
+              <Link href="/Background" className="hover:text-brand-light transition">Background</Link>
             </li>
             <li>
               <Link href="/projects" className="hover:text-brand-light transition">Projects</Link>
@@ -84,7 +84,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
         <p>&copy; {currentYear} Sana Islam. All rights reserved.</p>
         <p className="flex items-center gap-1">
-          Built with Next.js, Tailwind CSS & <Heart className="w-3.5 h-3.5 text-brand-light fill-brand-light" />
+          Built with Next.js, Tailwind CSS, React & <Heart className="w-3.5 h-3.5 text-brand-light fill-brand-light" />
         </p>
       </div>
     </footer>
