@@ -123,7 +123,7 @@ export default function FeaturedEducation() {
         {/* Link to view all educations */}
         <div className="text-center md:text-left">
           <Link
-            href="/about"
+            href="/Background"
             className="inline-flex items-center gap-2 text-sm sm:text-base font-semibold text-white hover:text-brand-light transition group focus:outline-none focus:underline"
           >
             <span>View All Qualifications & Academic Background</span>

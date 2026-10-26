@@ -116,7 +116,7 @@ export default function FeaturedCertifications() {
         {/* Link to view all certifications */}
         <div className="text-center md:text-left">
           <Link
-            href="/certifications"
+            href="/Certifications"
             className="inline-flex items-center gap-2 text-sm sm:text-base font-semibold text-white hover:text-brand-light transition group focus:outline-none focus:underline"
           >
             <span>View All Certificates & Credentials</span>
