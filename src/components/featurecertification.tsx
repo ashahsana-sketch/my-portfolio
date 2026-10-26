@@ -64,7 +64,7 @@ export default function FeaturedCertifications() {
               key={cert.id}
               tabIndex={0}
               aria-label={`${cert.title} issued by ${cert.issuer}`}
-              className={`group rounded-2xl bg-slate-950 bg-gradient-to-br ${cert.gradient} border border-slate-800/90 p-5 sm:p-6 flex flex-col justify-between transition-all duration-300 hover:border-slate-600 hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-brand/60 backdrop-blur-md w-full overflow-hidden shadow-xl`}
+              className={`group rounded-2xl bg-slate-950 bg-linear-to-br ${cert.gradient} border border-slate-800/90 p-5 sm:p-6 flex flex-col justify-between transition-all duration-300 hover:border-slate-600 hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-brand/60 backdrop-blur-md w-full overflow-hidden shadow-xl`}
             >
               <div>
                 <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
